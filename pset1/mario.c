@@ -10,12 +10,12 @@ int main(void) {
         height = get_int();
     } while ((height > 23) || (height < 0));
     int num_space = height - 1;
-    for(int line = 0; line < height; line++) {
+    for(int row = 0; line < height; row++) {
         space(num_space);
         num_space--;
-        hash(line);
+        hash(row);
         space(2);
-        hash(line);
+        hash(row);
         printf("\n");
     }
 }
